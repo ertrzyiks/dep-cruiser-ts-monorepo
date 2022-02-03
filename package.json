@@ -1,0 +1,17 @@
+{
+  "name": "dep-cruiser-ts-moorepo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "depcruise --output-type json --config .dependency-cruiser.js --output-to modules.json ."
+  },
+  "dependencies": {
+    "dependency-cruiser": "^11.3.0",
+    "typescript": "^4.5.5"
+  }
+}

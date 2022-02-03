@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~core/*": ["this-is-the-core/*"],
+    }
+  },
+  "include": ["./src"]
+}
